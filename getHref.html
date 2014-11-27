@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script> 
+	$(document).ready(function(){
+		$('button').click(function(){
+			alert($("#piggy").attr("href"));
+		});
+	});
+</script>
+</head>
+
+<body>
+	<p><a href="pie.com" id="piggy">Pigs on the island</p>
+	<button>show href value</button>	
+</body>
+</html>
