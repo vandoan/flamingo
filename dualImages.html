@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	.reveal{
+		width: 244px;
+		height: 205px;
+		border: #000 solid 1px;
+		float: left;
+		overflow: hidden;
+		margin: 24px;
+	}
+	.reveal > img { position: absolute; }
+	.reveal > .img2 {
+		clip: rect(0px, 140px, 244px, 0px);
+	}
+	.reveal > .activator {
+		position: absolute;
+		width: 244px;
+		height: 205px;
+		opacity: 0;
+		cursor: e-resize;
+	}
+</style>
+<script>
+	function reveal(event) { 
+		event.target.previousElementSibling.style.clip ="rect(0px, "+ (event.clientX-event.target.offsetLeft) + "px, 280px, 0px)";}
+</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<img src='imgres-1.jpg'>
+		<img class='img2' src='imgres-2.jpg'>
+		<div class='activator' onmousemove='reveal(event)'></div>
+	</div>
+</body>
+</html>
