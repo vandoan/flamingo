@@ -4,26 +4,25 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script> 
-$(document).ready(function(){
-	$("#flip").click(function(){
-		$("#panel").slideUp("slow");
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(4000);
+		});
 	});
-});
 </script>
 
-<style>
-#panel,#flip {
-	padding: 5px;
-	text-align: center;
-	background-color: aliceblue;
-	border: solid 1px #c3c3c3;
-}
-#panel { padding: 50px; }
-</style>
 </head>
 
 <body>
-	<div id="flip">Click to slide the up</div>
-	<div id="panel">Meow World!</div>
+	<p>Demonstrate fadeIn() with different parameters</p>
+	<button>Click to fade in boxes</button>
+	<br><br>
+	<div id="div1" style="width:80px; height:80px; display:none; background-color:coral; "></div>
+	<br><br>
+	<div id="div2" style="width:80px; height:80px; display:none; background-color:green;"></div>
+	<br>
+	<div id="div3" style="width:80px; height:80px; display:none; background-color:blue;"></div>
 </body>
 </html>
