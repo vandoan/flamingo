@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script> 
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<!-- a callback function is executed after the current effect is finished -->
+	<button>click me</button>
+	<p id='p1'>yeahhh!!!</p>
+	</body>
+</html>
