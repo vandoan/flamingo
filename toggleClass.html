@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("h1,h2,p").toggleClass("blue");
+		if ($("#btn1").text === "Blue on") {
+			$("#btn1").text("Blue off");
+		} else { $("#btn1").text("Blue on"); }
+	
+	});
+});
+</script>
+<style>
+.important {
+	font-weight:bold;
+	font-size:xx-large;
+}
+.blue { color:blue; }
+</style>
+</head>
+<body>
+
+<h1 class="blue">Heading 1</h1>
+<h2 class="blue">Heading 1</h2>
+<p class="blue"> This is a paragraph.</p>
+<br>
+<br>
+<button id="btn1">Blue on</button>
+
+</body>
+</html>

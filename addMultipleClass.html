@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#div1").addClass("important blue");
+	});
+	$("#btn2").click(function(){
+		$("#div2").addClass("important");
+	});
+});
+</script>
+<style>
+.important {
+	font-weight:bold;
+	font-size:xx-large;
+}
+.blue { color:blue; }
+</style>
+</head>
+<body>
+
+<div id="div1">Some text here</div>
+
+<div id="div2">Some text here</div>
+<br>
+<br>
+<button id="btn1">Add classes to elements</button>
+<button id="btn2">Add important class to the second div</button>
+
+</body>
+</html>
