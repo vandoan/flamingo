@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("p").prepend(" <b>Prepended text</b>.");
+	});
+	$("#btn2").click(function(){
+		$("ol").prepend("<li>Prepended item</li>");
+	});
+});
+</script>
+</head>
+
+<body>
+<p id="test1">Prepend() adds content at the beginning</p>
+<p id="test2">This is another paragraph.</p>
+<ol>
+	<li>item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+</ol>
+<button id="btn1">Prepend text</button>
+<button id="btn2">Prepend list items</button>
+</body>
+</html>
