@@ -4,15 +4,13 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script>
-$(document).ready(function(){
-	$("#btn1").click(function(){
-		$("h1,h2,p").toggleClass("blue");
-		if ($("#btn1").text === "Blue on") {
-			$("#btn1").text("Blue off");
-		} else { $("#btn1").text("Blue on"); }
-	
-	});
-});
+function switchOnOff(onOff) {
+	$("h1,h2,p").toggleClass("blue");
+	if (onOff === "blueOff") {
+		$("#btn1").text("Blue off").val("blueOn");
+	} else { $("#btn1").text("Blue on").val("blueOff"); 
+	}
+}	
 </script>
 <style>
 .important {
@@ -29,7 +27,7 @@ $(document).ready(function(){
 <p class="blue"> This is a paragraph.</p>
 <br>
 <br>
-<button id="btn1">Blue on</button>
+<button id="btn1" value="blueOn" onclick="switchOnOff(this.value);">Blue off</button>
 
 </body>
 </html>
