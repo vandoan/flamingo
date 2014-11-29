@@ -1,0 +1,25 @@
+<script type="text/javascript">
+function analyzeColor(myColor) {
+	switch (myColor)
+	{
+		case "Blue":
+			alert("Just like the sky!");
+			break;
+		case "red":
+			alert("Just like the sky!");
+			break;
+		default: 
+			alert("Suit youself then...");
+	}
+}
+</script>
+
+<h3>Favorite Color</h3>
+<input type="radio" name="fav_color" value="Blue"
+	onclick="analyzeColor(this.value);" /> Blue <br/ >
+
+<input type="radio" name="fav_color" value="Red" 
+	onclick="analyzeColor(this.value);" /> Red <br />
+
+<input type="radio" name="fav_color" value="None" 
+	onclick="analyzeColor(this.value);" /> None

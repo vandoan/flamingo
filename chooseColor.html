@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	function changeColor(){
+		var newColor = document.getElementById('colorPicker').value;
+		document.getElementById('colorMsg').style.background = newColor;
+	}
+</script>
+
+<div id="colorMsg" style="font-size:18px; width:150px;height:100px;padding;5px;">
+
+	Choose a backgroundcolor... </div>
+
+	<select id="colorPicker" onchange="changeColor()">
+		<option value="transparaent">None</option>
+		<option value="yellow">Yellow</option>
+		<option value="salmon">Salmon</option>
+		<option value="limegreen">Lime Green</option>
+	</select>

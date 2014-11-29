@@ -1,0 +1,8 @@
+<script type="text/javascript">
+	function showMsg(){
+		var userInput = document.getElementById('userInput').value;
+		document.getElementById('userMsg').innerHTML = userInput;
+	}
+</script>
+<input type="input" maxlength="40" id="userInput" onkeyup="showMsg()" value="Enter text here..." />
+<p id="userMsg"></p>
